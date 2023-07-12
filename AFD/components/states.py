@@ -1,6 +1,5 @@
 from manim import *
 from math import cos, sin, pi
-from numpy import ndarray
 
 class State(Circle):
     def __init__(self, name: str, **kwargs):
@@ -32,7 +31,7 @@ class AceptState(State):
     def __init__(self, name:str, **kwargs):
         super().__init__(name, **kwargs)
         
-        envolted = Circle(radius= self.radius+self.radius*0.1)
+        envolted = Circle(radius= self.radius+self.radius*0.1, color=self.get_color())
         envolted.move_to(self.get_center())
         self.add(envolted)
 
@@ -40,5 +39,10 @@ class AceptState(State):
 class Main(Scene):
     def construct(self):
         init = InitialState(name='$q_0$', angle_arrow=pi, radius=0.5, color=WHITE)
-        self.play(Create(init))
+        init.move_to([0.4, 0.4, 0])
+
+        final = AceptState("$q_F$", radius=1.2, color=WHITE)
+        final.move_to([-0.4, 0, 0])
+        
+        self.play(Create(init), Create(final))
         self.wait(1)
