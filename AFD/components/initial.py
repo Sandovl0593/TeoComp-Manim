@@ -22,23 +22,9 @@ def generate_title(titl:str):
     return NameVideo()
 
 
-def generate_subtitle(part_int:str):
-
-    class Subtitle(Scene):
-        def construct(self):
-            subtitl = VGroup(Tex(part_int, font_size=size_subtitle_def))
-            subtitl.arrange(RIGHT, center=True)
-
-            self.play(FadeIn(subtitl, run_time=run_def))
-            self.wait()
-            self.play(subtitl.animate.scale(0.6).to_edge(UP))
-    
-    return Subtitle()
-
-
 def run_scene(scene: Scene):
     scene.render()
-
+    
     # Borrar archivos innecesarios
     def delete_cache(dir:str):
         for archivo in os.listdir(dir):
@@ -46,9 +32,8 @@ def run_scene(scene: Scene):
             if os.path.isfile(ruta_archivo):
                 os.remove(ruta_archivo)
 
-        # Borrar la dir
         os.rmdir(dir)
 
-    delete_cache('../media/Tex')
-    delete_cache('../media/images')
-    delete_cache('../media/texts')
+    delete_cache('./media/Tex')
+    delete_cache('./media/images')
+    # delete_cache('../media/texts')

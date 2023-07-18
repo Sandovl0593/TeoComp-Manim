@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/adria/Desktop/Codes/Proyects/TeoComp-Manim/AFD/media/videos/1080p60/partial_movie_files/Definition/1413466013_1231629825_223132457.mp4'
+file 'file:C:/Users/adria/Desktop/Codes/Proyects/TeoComp-Manim/AFD/media/videos/1080p60/partial_movie_files/Definition/1672018281_3315967912_1476041097.mp4'
+file 'file:C:/Users/adria/Desktop/Codes/Proyects/TeoComp-Manim/AFD/media/videos/1080p60/partial_movie_files/Definition/1672018281_3406430945_282393003.mp4'
+file 'file:C:/Users/adria/Desktop/Codes/Proyects/TeoComp-Manim/AFD/media/videos/1080p60/partial_movie_files/Definition/1672018281_3315967912_4280712263.mp4'
+file 'file:C:/Users/adria/Desktop/Codes/Proyects/TeoComp-Manim/AFD/media/videos/1080p60/partial_movie_files/Definition/1672018281_1128903183_953408291.mp4'
+file 'file:C:/Users/adria/Desktop/Codes/Proyects/TeoComp-Manim/AFD/media/videos/1080p60/partial_movie_files/Definition/1672018281_3315967912_3090051631.mp4'
+file 'file:C:/Users/adria/Desktop/Codes/Proyects/TeoComp-Manim/AFD/media/videos/1080p60/partial_movie_files/Definition/1672018281_3772710279_1851006583.mp4'
